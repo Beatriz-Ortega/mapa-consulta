@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;;
+  background-color: #eeeeee;
+}
+
+$margin-small: 150px;
+$margin-md: 400px;
+
+.inicio {
+  background-color: #186A3B;
+  .tamaño-select{
+    width: 300px;
+    height: 50px;
+  }
+}
+
+.principal{
+  margin-top: $margin-small;
+  @media (min-width: 768px) {
+    margin-top: $margin-md;
+  }
+  .card{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    .titulo {
+      font-size: 50px;
+    }
+  }
+}
+
+.mapa{
+  .texto{
+    font-size: 20px;
+  }
+}
+
+.foto{
+  .card-img{
+    border: 2px solid #000;
+    border-radius: 10px;
+    max-height: 600px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+}
